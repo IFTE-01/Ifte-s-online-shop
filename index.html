@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <title>ifte's shop</title>
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <nav class="bg-gray-950 w-full fixed z-11000">
+            <div class="flex items-center justify-between p-4">
+
+
+                <div class="flex justify-center items-center gap-3">
+                    <img src="./photo/image1.png" class="w-14">
+                    <p class="text-lime-50 text-2xl">IFTE'S SHOP</p>
+                </div>
+                <div >
+                    <el-dropdown class="inline-block">
+                        <button class="rounded-md bg-gray-800 px-3 py-1 text-white text-4xl ">
+                            ≡
+                        </button>
+
+                        <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                                <div class="py-1">
+                                    <a href="#Home" class="block px-4 py-2 text-gray-300  text-white ">Home</a>
+                                    <a href="#Product" class="block px-4 py-2 text-gray-300  text-white ">Products</a>
+                                    <a href="#review" class="block px-4 py-2 text-gray-300  text-white ">Reviews</a>
+                                    <a href="#contact" class="block px-4 py-2 text-gray-300  text-white ">Contact</a> 
+                                </div>
+                        </el-menu>
+                    </el-dropdown>
+                </div>
+            </div>
+         </nav>
+        </header>
+    <!-- banner slide effect -->
+     
+        
+
+
+
+    <div id="Home" class="relative w-full pt-10" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-140 overflow-hidden rounded-lg ">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./photo/image2.png" class="absolute block w-120 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-110" alt=" ">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./photo/image4.png" class="absolute block w-120 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-110" alt=" ">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./photo/image5.png" class="absolute block w-120 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-110" alt=" ">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./photo/image8.png" class="absolute block w-120 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-110" alt=" ">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./photo/image9.png" class="absolute block w-120 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-110" alt=" ">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+
+    </section>
+    <!-- items -->
+     <!-- product -->
+     <section id="Product" class="bg-gray-800 py-30">
+         <div class="text-center text-green-50 text-3xl">
+            <p>Products</p>
+         </div>
+         <div class="pt-20 pl-4 sm:pl-10">
+           <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 w-90 sm:w-230 lg:w-300 xl:w-420">
+       
+            <div class="bg-gray-900 rounded-lg transition duration-300 hover:scale-105 hover:bg-green-100  hover:shadow-[0_0_20px_#ffffff] hover:text-gray-950 text-gray-50 ">
+                <img src="./photo/image6.webp" class="w-full h-48 lg:h-90 xl:h-110 object-cover">
+                <div class="p-5">
+                    <p class="text-xl mb-2">Product 1</p>
+                    <p class=" mb-4">STRAW Slim Fit Mens Fashion Dress Shirts Formal Long Sleeve Solid Color Casual Korean Dress Clothes</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold ">$30.99</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-900 rounded-lg  duration-300 hover:scale-105 hover:shadow-[0_0_20px_#ffffff] hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                <img src="./photo/image7.png" class="w-full h-48 lg:h-90 xl:h-110 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl mb-2 ">Product 2</h3>
+                    <p class=" mb-4">STRAW Slim Fit Mens Fashion Dress Shirts Formal Long Sleeve Solid Color Casual Korean Dress Clothes</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold  ">$33.99</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-lg  duration-300 hover:scale-105 hover:shadow-[0_0_20px_#ffffff] hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                <img src="./photo/image10.jpg" class="w-full h-48 lg:h-90 xl:h-110 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl mb-2  ">Product 3</h3>
+                    <p class="  mb-4">STRAW Slim Fit Mens Fashion Dress Shirts Formal Long Sleeve Solid Color Casual Korean Dress Clothes</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold  ">$34.99</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-lg  duration-300 hover:scale-105 hover:shadow-[0_0_20px_#ffffff] hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                <img src="./photo/image11.jpeg" class="w-full h-48 lg:h-90 xl:h-110 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl mb-2  ">Product 4</h3>
+                    <p class="  mb-4">STRAW Slim Fit Mens Fashion Dress Shirts Formal Long Sleeve Solid Color Casual Korean Dress Clothes</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold  ">$40.99</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-lg  duration-300 hover:scale-105 hover:shadow-[0_0_20px_#ffffff] hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                <img src="./photo/image12.jpg" class="w-full h-48 lg:h-90 xl:h-110 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl mb-2  ">Product 5</h3>
+                    <p class="  mb-4">STRAW Slim Fit Mens Fashion Dress Shirts Formal Long Sleeve Solid Color Casual Korean Dress Clothes</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold  ">$50.99</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-lg  duration-300 hover:scale-105 hover:shadow-[0_0_20px_#ffffff] hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                <img src="./photo/image13.jpg" class="w-full h-48 lg:h-90 xl:h-110 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl mb-2 ">Product 6</h3>
+                    <p class="  mb-4">STRAW Slim Fit Mens Fashion Dress Shirts Formal Long Sleeve Solid Color Casual Korean Dress Clothes</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold  ">$65.99</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+     </section>
+     <!-- review -->
+     <section>
+        <div  id="review" class=" bg-gray-900 items-center py-25">
+            <div class="text-3xl text-gray-50 text-center pb-10 ">
+                <p>Review</p>
+            </div>
+            <!-- review box.. -->
+            <div class="grid lg:grid-cols-3 sm:gap-4 xl:gap-8 gap-2 sm:px-5 xl:px-20 px-2 ">
+                <div class="bg-gray-700  rounded-md hover:scale-101 hover:shadow-[0_0_20px_#ffffff] duration-300  hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                    <div class="p-8">
+                        <!-- pic , rate, name -->
+                        <div class="flex jestify-center gap-2 sm:gap-5">
+                            <!-- pic -->
+                            <img src="./photo/image14.png" class="h-17">
+                            <div>
+                                <p class="  text-2xl">Cat man</p>
+                                <p>⭐⭐⭐★★</p>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <p class=" ">Reviewed in the Bangladesh on September 9, 2025</p>
+                        </div>
+                        <div class="py-5">
+                            <p class="  text-xl">Great quality for the price. দামে কম, মানে ভাল </p>
+                        </div>
+                        <div class="py-5 flex   gap-5">
+                            <button class="p-4 bg-blue-600 text-gray-50 rounded-full">
+                                <p>helpful</p>
+                            </button>
+                            <button class="p-4 bg-blue-600 text-gray-50 rounded-full">
+                                <p>report</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-md hover:scale-103 hover:shadow-[0_0_20px_#ffffff] duration-300  hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                    <div class="p-8">
+                        <!-- pic , rate, name -->
+                        <div class="flex jestify-center gap-5">
+                            <!-- pic -->
+                            <img src="./photo/image15.png" class="h-17">
+                            <div>
+                                <p class="  text-2xl">Meow man</p>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <p class=" ">Reviewed in the Bangladesh on September 2, 2025</p>
+                        </div>
+                        <div class="py-5">
+                            <p class="  text-xl">Wow! This product is super affordable</p>
+                        </div>
+                        <div class="py-5 flex   gap-5">
+                            <button class="p-4 bg-blue-600 text-gray-50 rounded-full">
+                                <p>helpful</p>
+                            </button>
+                            <button class="p-4 bg-blue-600 text-gray-50 rounded-full">
+                                <p>report</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-md hover:scale-101 hover:shadow-[0_0_20px_#ffffff] duration-300  hover:text-gray-950 text-gray-50 hover:bg-green-100">
+                    <div class="p-8">
+                        <!-- pic , rate, name -->
+                        <div class="flex jestify-center gap-5">
+                            <!-- pic -->
+                            <img src="./photo/image16.png" class="h-17">
+                            <div>
+                                <p class="  text-2xl">Duck man</p>
+                                <p>⭐⭐⭐⭐★</p>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <p class=" ">Reviewed in the Bangladesh on September 10, 2025</p>
+                        </div>
+                        <div class="py-5">
+                            <p class="  text-xl">This product is excellent! The quality is impressive</p>
+                        </div>
+                        <div class="py-5 flex   gap-5">
+                            <button class="p-4 bg-blue-600 text-gray-50 rounded-full">
+                                <p>helpful</p>
+                            </button>
+                            <button class="p-4 bg-blue-600 text-gray-50 rounded-full">
+                                <p>report</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="items-center text-center bg-gray-800 py-10">
+        <div id="contact" class="text-gray-50 text-3xl">
+            <p>Contact</p>
+        </div>
+        <div>
+            <div class=" p-15 bg-gray-900 mx-10 rounded-md mt-10 xl:mx-105 lg:mx-60 sm:mx-20 hover:bg-green-100 hover:shadow-[0_0_15px_#ffffff] transition hover:scale-105 duration:900 text-gray-50 hover:text-gray-950">
+                <p class=" text-left text-xl sm:text-3xl">
+                    Email address: <br>iftekharalam5623@gmail.com<br><br>
+                    Phone number :<br>01818477521
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="text-gray-50 pt-10">Copyright © 2025 Md.Iftekhar Alam. All Rights Reserved.</p>
+        </div>
+     </section>
+</body>
+</html>
